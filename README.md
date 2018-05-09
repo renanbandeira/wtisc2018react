@@ -17,3 +17,24 @@ No final do curso, queremos criar uma aplicação em ReactJS testada carregando 
 - React-firebase
 - Immutable
 - Lint ( https://www.npmjs.com/package/eslint-config-airbnb )
+
+## Ementa
+
+Essa ementa serve para nortear os alunos para que possamos alinhar as expectativas do curso. No entanto, é possível que toda a ementa não seja cumprida pela falta de tempo.
+
+### Dia 1
+- Introdução ao ReactJS
+- Usando o create-react-App
+- Usando o eslint
+- Testando a minha app
+
+### Dia 2
+- Imutabilidade
+- React-Firebase
+  - Carregando Dados
+  - Adicionando Dados
+
+### Dia 3
+- Redux: Controlando dados da aplicação facilmente
+- React-Redux-Firebase
+- Testando o Redux
