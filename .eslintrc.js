@@ -50,6 +50,7 @@ module.exports = {
     "jsx-a11y/no-static-element-interactions": "off", // we need to set onClick handlers on divs for mobile touch
     "jsx-a11y/href-no-hash": "off",
     "jsx-a11y/click-events-have-key-events": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }], // https://github.com/facebook/create-react-app/issues/290
     "import/prefer-default-export": "off", // webstorm doesn't detect usage of default export
 
     "react/jsx-no-bind": ["error",
