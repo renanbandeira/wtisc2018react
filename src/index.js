@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import HackathonMap from './components/HackathonMap';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<HackathonMap />, document.getElementById('root'));
