@@ -9,14 +9,27 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: name1
+      name: name1,
+      correios: {}
     };
   }
 
   changeName = () => {
     const name = this.state.name === name1 ? name2 : name1;
-    this.setState({
-      name
+    if (name === name1) {
+      this.setState({
+        name,
+        correios: {}
+      });
+      return;
+    }
+    fetch('https://viacep.com.br/ws/01001000/json', { method: 'GET' }).then((response) => {
+      response.json().then((data) => {
+        this.setState({
+          correios: data,
+          name
+        });
+      });
     });
   }
 
@@ -30,6 +43,8 @@ class App extends Component {
         <button onClick={this.changeName}>Change name</button>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
+          <br />
+          {this.state.correios.logradouro ? `Logradouro: ${this.state.correios.logradouro}` : ''}
         </p>
       </div>
     );
