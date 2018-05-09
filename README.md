@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+[Slack](https://goo.gl/ag5mjm).
+
+
 ## Duração do Curso
 6h
 
