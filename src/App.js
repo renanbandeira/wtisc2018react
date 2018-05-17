@@ -30,7 +30,6 @@ class App extends Component {
         <Content>
           <Breadcrumb style={styles.breadCrumb}>
             <Breadcrumb.Item>Home</Breadcrumb.Item>
-            <Breadcrumb.Item>List</Breadcrumb.Item>
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb>
           <div style={styles.content}>

@@ -9,13 +9,15 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-firebase": "^2.2.8",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "prestart": "npm run lint",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "deploy": "npm run build && firebase deploys",
     "eject": "react-scripts eject",
     "lint": "eslint --cache --ext .js --ext .jsx src test",
     "lint:fix": "eslint --ext .js --ext .jsx --fix src test"
